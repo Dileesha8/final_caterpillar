@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url('otpback.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .macbook-pro-14-1 {
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .rectangle-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(145deg, rgba(224, 247, 250, 0.9), rgba(128, 222, 234, 0.9));
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .frame-child,
+  .frame-item {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rectangle-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+  }
+  
+  .otp-input-parent {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .employee-id {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .employee-id:focus {
+    border-color: #26a69a;
+  }
+  
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #26a69a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #00796b;
+  }
+  
+  .button1 {
+    font-weight: 600;
+  }
+  
+  .star-icon,
+  .x-icon {
+    display: none;
+  }
+  
+  @media (max-width: 450px) {
+    .macbook-pro-14-1 {
+      padding: 15px;
+    }
+  
+    .rectangle-parent {
+      padding: 15px;
+    }
+  
+    .rectangle-group {
+      padding: 15px;
+    }
+  }
+  
