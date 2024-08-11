@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="faq.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap"
+  />
+  <style>
+    .answer {
+      display: none; /* Hide answers by default */
+      margin-top: 5px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    .question {
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
+    .question:hover {
+      background-color: #d0d0d0;
+    }
+  </style>
+</head>
+<body>
+  <div class="macbook-pro-14-2">
+    <img class="faqs-page-1" alt="" src="faqback.jpg" />
+    <div class="frequently-asked-questions-wrapper">
+      <h1 class="frequently-asked-questions">Frequently Asked Questions</h1>
+    </div>
+    <section class="instance-parent">
+      <!-- Question 1 -->
+      <div class="frame-parent">
+        <div class="question">
+          What does Caterpillar Inc. do?
+        </div>
+        <div class="answer">
+          Caterpillar Inc. is a leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines, and locomotives.
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div class="frame-group">
+        <div class="question">
+          Where is Caterpillar Inc. headquartered?
+        </div>
+        <div class="answer">
+          Caterpillar Inc. is headquartered in Deerfield, Illinois, USA.
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div class="frame-container">
+        <div class="question">
+          When was Caterpillar Inc. founded?
+        </div>
+        <div class="answer">
+          Caterpillar Inc. was founded in 1925, following the merger of two companies.
+        </div>
+      </div>
+      <!-- Additional Questions -->
+      <!-- Add other questions similarly -->
+    </section>
+  </div>
+  
+  <script>
+    // Add event listeners to all questions
+    document.querySelectorAll('.question').forEach((question) => {
+      question.addEventListener('click', () => {
+        // Toggle the display of the corresponding answer
+        const answer = question.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
